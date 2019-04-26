@@ -8,11 +8,11 @@
 
 `git clone git@github.com:helloChou/socket_TCP_UDP.git`
 
-![1556259927720](E:\git_test\assets\1556259927720.png)
+![1556261387702](assets/1556261387702.png)
 
 输出如上图，表示克隆完成，打开e盘可以看到出现一个文件目录：`socket_TCP_UDP`
 
-![1556260035514](E:\git_test\assets\1556260035514.png)
+![1556261294550](assets/1556261294550.png)
 
 打开该目录可以看到有github中`socket_TCP_UDP`库上的所有文件和一个`.git`本地库
 
