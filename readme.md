@@ -8,4 +8,8 @@ git教程一：安装git以及创建一个本地respository的过程
 
 git教程二：将本地respository与github上的respository进行远程同步的过程
 
+git教程三：克隆远程respository到本地respository中
+
+
+
 ....

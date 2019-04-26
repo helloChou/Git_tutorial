@@ -38,7 +38,40 @@ OK,到这里为止我们已经完成了将git教程一.md添加到本地resposit
 
 这里的`git@github.com:helloChou/Git_tutorial.git`是我的Git_tutorial.git库的地址，这里也可以使用HTTPS的方式输入:`git remote add origin  https://github.com/helloChou/Git_tutorial`
 
-`origin`是远程库的名字，这是Git的默认设定，可以自己修改成其它的名字
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+这里：`origin`是代指远程库 `git@github.com:helloChou/Git_tutorial.git`，即如果下一次同步还是与Git_tutorial.git中同步，就不需要再执行
+
+`git remote add origin git@github.com:helloChou/Git_tutorial.git`
+
+(`origin`是远程库的名字，这是Git的默认设定，可以自己修改成其它的名字)
+
+但是如果下一次本地库要和其它的github库同步，有两种方式：
+
+方式一：
+
+必须要先删除原有的`origin`,再添加新的远程git仓库
+
+```
+git remote rm origin
+git remote add origin git@github:helloChou/socket_TCP_UDP.git
+```
+
+如果 `git remote rm origin`报错的话，就要手动修改`gitconfig`文件的内容
+
+输入`vi .git/config`，删掉 `[remote "origin"]`
+
+方式二：
+
+换一个名称，不采用origin。
+
+例如：
+
+![1556249502666](assets/1556249502666.png)
+
+采用origin1（可以自己取其它的，只要别忘了就行）即可。
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 
@@ -75,3 +108,8 @@ OK,到这里为止我们已经完成了将git教程一.md添加到本地resposit
 关联后，使用命令`git push -u origin master`第一次推送master分支的所有内容；
 
 此后，每次本地提交后，只要有必要，就可以使用命令`git push origin master`推送最新修改；
+
+
+
+
+
