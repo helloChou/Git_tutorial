@@ -6,7 +6,7 @@
 
 首先，打开github创建或打开一个想要和本地respository同步的respository。
 
-![1556244964433](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556244964433.png)
+![1556248087430](assets/1556248087430.png)
 
 显然，这里我的Git_tutorial是一个空respository。
 
@@ -14,21 +14,19 @@
 
 首先将`git教程(1).md`放入git_test目录中
 
-![1556245167391](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556245167391.png)
+![1556245167391](assets/1556245167391.png)
 
 打开`git-bash.exe`，进入到`git_test`目录下，然后
 
 注意：这里好像不能打括号()，显示输入错误：
 
-![1556245378678](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556245378678.png)
+![1556245378678](assets/1556245378678.png)
 
 因此，我将文件名改为`git教程一.md`,然后输入
 
 `git add git教程一.md`
 
- 
-
-![1556245501929](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556245501929.png)
+![1556245501929](assets/1556245501929.png)
 
 OK,到这里为止我们已经完成了将git教程一.md添加到本地respository中，接下来完成与github仓库同步。
 
@@ -36,7 +34,7 @@ OK,到这里为止我们已经完成了将git教程一.md添加到本地resposit
 
 输入：`git remote add origin git@github.com:helloChou/Git_tutorial.git` 完成**关联一个远程库**
 
-![1556245659389](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556245659389.png)
+![1556245659389](assets/1556245659389.png)
 
 这里的`git@github.com:helloChou/Git_tutorial.git`是我的Git_tutorial.git库的地址，这里也可以使用HTTPS的方式输入:`git remote add origin  https://github.com/helloChou/Git_tutorial`
 
@@ -48,7 +46,7 @@ OK,到这里为止我们已经完成了将git教程一.md添加到本地resposit
 
 `git push -u origin master`
 
-![1556245963519](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556245963519.png)
+![1556245963519](assets/1556245963519.png)
 
 推送完成！
 
@@ -60,7 +58,7 @@ OK,到这里为止我们已经完成了将git教程一.md添加到本地resposit
 
 然后我们去github上看一看：
 
-![1556246288982](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556246288982.png)
+![1556246288982](assets/1556246288982.png)
 
 这就能看到我们添加的git教程一了，**但是为什么还有一个readme.cc呢？**
 

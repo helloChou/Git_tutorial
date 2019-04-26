@@ -1,4 +1,4 @@
-# 如何在本地创建一个版本库？
+如何在本地创建一个版本库？
 
 版本库(respository)相当于是一个目录，这个目录里面的所有文件都可以被Git管理，每个文件的修改、删除都会被Git记录下来，以便在未来的某个时间点可以看到之前任何一次修改、删除记录。
 
@@ -12,27 +12,27 @@
 
 下载Git完成安装后，打开安装目录文件Git，如下
 
-![1556241929054](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556241929054.png)
+![1556241929054](assets/1556241929054.png)
 
 由于本地的respository与github的respository之间是通过SSH加密的，因此需要设置SSH，设置步骤如下：
 
 启动`git-bash.exe`，输入`ssh-keygen`，显示产生了一对RSA公钥和私钥，存放在文件`/c/User/DENGYY/.ssh/id_rsa`路径下。
 
-![1556242219979](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556242219979.png)
+![1556242219979](assets/1556242219979.png)
 
 打开`/c/User/DENGYY/.ssh`
 
-![1556242452204](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556242452204.png)
+![1556242452204](assets/1556242452204.png)
 
 其中id_ras.pub存放着SSH加密的公钥，以文本文件的形式打开并复制其中的公钥。
 
 然后打开你的github页面，点击头像，点击settings。
 
-![1556242642377](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556242642377.png)
+![1556242642377](assets/1556242642377.png)
 
 找到`SSH and GPG keys`，点击`New SSH key`，将`id_ras.pub`存放着SSH加密的公钥添加到里面，完成。
 
-![1556242837116](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556242837116.png)
+![1556242837116](assets/1556242837116.png)
 
 ## （3）在本地创建一个空Respository
 
@@ -46,13 +46,13 @@
 
 `cd git_test`
 
-![1556243286068](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556243286068.png)
+![1556243286068](assets/1556243286068.png)
 
 然后将git_test目录变成git可以管理的仓库：
 
 `git init`
 
-![1556243363035](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556243363035.png)
+![1556243363035](assets/1556243363035.png)
 
 这里显示就是在git_test/.git路径下初始化了一个空Git仓库，到这里空仓库就建立好了，注意：.Git目录是进行跟踪管理版本库的，不能手动修改其内容！
 
@@ -60,17 +60,17 @@
 
 首先利用notepad++写一个文档存入git_test目录下，注意要存放在git_test目录下！！
 
-![1556243756186](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556243756186.png)
+![1556243756186](assets/1556243756186.png)
 
 然后在git-bash.exe下用命令 `git add`，将文件添加到仓库
 
-![1556243864811](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556243864811.png)
+![1556243864811](assets/1556243864811.png)
 
 这里如果正确添加了是没有信息显示的。
 
 然后用命令 `git commit`，将文件提交到仓库。
 
-![1556243977734](C:\Users\DENGYY\AppData\Roaming\Typora\typora-user-images\1556243977734.png)
+![1556243977734](assets/1556243977734.png)
 
 这里用的是 `git commit -m "wrote a test file"`
 
